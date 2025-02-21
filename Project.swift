@@ -2,6 +2,18 @@ import ProjectDescription
 
 let project = Project(
     name: "GoodsStore",
+    settings: .settings(
+        base: [
+            "DEVELOPMENT_TEAM": "5P2MVJMNMA",
+            "IPHONEOS_DEPLOYMENT_TARGET": "18.0",
+            "MARKETING_VERSION": "1.0.0",
+            "CURRENT_PROJECT_VERSION": "1.0.0",
+            "PRODUCT_BUNDLE_IDENTIFIER": "GoodsStore",
+            "PRODUCT_NAME": "GoodsStore",
+            "INFOPLIST_KEY_CFBundleDisplayName": "Goods Store",
+            "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.shopping",
+        ]
+    ),
     targets: [
         .target(
             name: "GoodsStore",
@@ -28,7 +40,6 @@ let project = Project(
                 .external(name: "Swinject"),
                 .external(name: "Kingfisher"),
             ],
-            settings: .settings(base: ["DEVELOPMENT_TEAM": "5P2MVJMNMA"]),
             coreDataModels: [
                 .coreDataModel("GoodsStore/Data/PersistentStorages/CoreDataStorage/GoodsStore.xcdatamodeld")
             ]
