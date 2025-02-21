@@ -14,9 +14,10 @@ let project = Project(
                 "GoodsStore/Domain/**",
                 .glob("GoodsStore/Data/**",
                       excluding: ["GoodsStore/Data/PersistentStorages/CoreDataStorage/GoodsStore.xcdatamodeld"]),
-                "GoodsStore/Presentation/**",
+                "GoodsStore/Presentation/**/*.swift",
             ],
             resources: [
+                "GoodsStore/Presentation/**/*.storyboard",
                 .glob(pattern: "GoodsStore/Resources/**",
                       excluding: ["GoodsStore/Resources/Info.plist"]),
                 

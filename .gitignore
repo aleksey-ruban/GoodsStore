@@ -1,3 +1,4 @@
 Derived/
 Tuist/.build/
 Tuist/.swiftpm/
+build/
