@@ -36,7 +36,6 @@ let project = Project(
             ],
             dependencies: [
                 .external(name: "Alamofire"),
-                .external(name: "RxSwift"),
                 .external(name: "Swinject"),
                 .external(name: "Kingfisher"),
             ],
